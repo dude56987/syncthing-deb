@@ -1,0 +1,2 @@
+sed -i.bak 's/syncthing-update//g' /etc/rc.local
+rm -f /etc/rc.local.bak

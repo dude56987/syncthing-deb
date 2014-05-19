@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Exec=syncthing-launcher
+Name=SyncThing
+Comment=Launch the syncthing interface
+Categories=
+GenericName=File Sync System
+Icon=network-server
+StartupNotify=true

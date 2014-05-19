@@ -1,0 +1,3 @@
+sed -i.bak 's/exit 0//g' /etc/rc.local
+echo 'syncthing-update' >> /etc/rc.local
+echo 'exit 0' >> /etc/rc.local
