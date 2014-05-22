@@ -14,6 +14,7 @@ build-deb:
 	mkdir -p debian/usr;
 	mkdir -p debian/usr/bin;
 	mkdir -p debian/usr/share;
+	mkdir -p debian/usr/share/pixmaps;
 	mkdir -p debian/usr/share/applications;
 	mkdir -p debian/etc;
 	mkdir -p debian/etc/xdg;
@@ -26,8 +27,10 @@ build-deb:
 	cp -vf syncthing-launcher.sh ./debian/usr/bin/syncthing-launcher
 	cp -vf syncthing-autostart.sh ./debian/usr/bin/syncthing-autostart
 	# copy over the launcher
-	cp -vf syncthing.desktop ./debian/usr/share/applications/syncthing.desktop
 	cp -vf syncthing-autostart.desktop ./debian/etc/xdg/autostart/syncthing-autostart.desktop
+	cp -vf syncthing.desktop ./debian/usr/share/applications/syncthing.desktop
+	# copy the icon to pixmaps
+	cp -vf syncthing.png ./debian/usr/share/pixmaps/syncthing.png
 	# make the program executable
 	chmod +x ./debian/usr/bin/syncthing
 	chmod +x ./debian/usr/bin/syncthing-update

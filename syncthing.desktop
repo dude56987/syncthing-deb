@@ -7,5 +7,5 @@ Name=SyncThing
 Comment=Launch the syncthing interface
 Categories=
 GenericName=File Sync System
-Icon=network-server
+Icon=/usr/share/pixmaps/syncthing.png
 StartupNotify=true
